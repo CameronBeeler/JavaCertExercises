@@ -12,6 +12,10 @@ class Sub extends Super {
     public void m1() throws FileNotFoundException {
         throw new FileNotFoundException();
     }
+    static void main (String [] args)
+    {
+        System.out.println("testedtrue");
+    }
 }
 
 class Test
@@ -28,5 +32,16 @@ class Test
         } finally {
             System.out.print("N");
         }
+
+        /*
+
+        try {
+            main(args);
+        } catch (Exception ex) {
+            System.out.println("CATCH-");
+        }
+        System.out.println("OUT");
+        */
+
     }
 }
